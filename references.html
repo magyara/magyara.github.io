@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Type 1 Diabetes</title>
+	
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="author" content="Ariel Magyar">
+	<meta name="viewport" content="width=device-width">
+	
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="dist/slicknav.css">
+	<link rel="stylesheet" type="text/css" href="diab_theme.css">
+</head>
+<body>
+	<style type="text/css">
+		* { margin: 0; padding: 0; }
+	</style>
+		
+		<div id="navi" style="margin:auto;">
+			<ul id="menu">
+				<li>
+					<a href="treatment.html" class="nav">Treatment & Diagnosis</a>
+				</li>
+				<li>
+					<a href="societal.html" class="nav">Societal & Behavioral Challenges</a>
+				</li>
+				<li>
+					<a href="ethical.html" class="nav">Ethical & Political Challenges</a>
+				</li>
+				<li>
+					<a href="help.html" class="nav">Getting Help</a>
+				</li>
+			</ul>
+		</div>
+		
+		<div align="center" style="margin-bottom: -5px;">
+			<a href="diabetes.html"><img src="images/diabetes/banner3.png" style="width:90%; background-color:#fff; max-width:1100px;"></a>
+		</div>
+
+		<div id="main">
+			<div style="padding:40px;">
+				<h1>References</h1>
+				<h2>Homepage</h2>
+				<a href="http://www.diabetes.co.uk/difference-between-type1-and-type2-diabetes.html">Diabetes CO UK</a>
+				<br/>
+				<a href="http://www.diabetes.org/diabetes-basics/type-1/">American Diabetes Association</a>
+				<br/>
+			</div>
+		</div>
+		
+		<div id="footer" align="center">
+			<a href="#" class="nav">References</a>
+		</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="dist/jquery.slicknav.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#menu').slicknav();
+		});
+	</script>
+	<style> 
+		.slicknav_menu {
+			display:none;
+		}
+
+		@media screen and (max-width: 70em) {
+			#navi {
+				display:none;
+			}
+
+			.slicknav_menu {
+				display:block;
+			}
+		}
+	</style>
+</body>
+</html>

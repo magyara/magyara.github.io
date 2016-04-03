@@ -105,10 +105,22 @@ h2 {
    color: #ed895a;	
    text-transform: uppercase;
 }
-table{
+
+table {
+	border-collapse: collapse;
+}
+
+th, td{
 	font-size: 15px;
 	font-family: verdana;
-	border: 0px;
+	border: 1px solid black;
+	padding: 10px;
+}
+
+th {
+	font-weight: bold;
+	color: #fff;
+	background-color:#424242; 
 }
 
 ul {
@@ -119,6 +131,11 @@ ul {
 
 li {
 	display: inline;
+}
+
+.clear {
+    clear:both;
+    line-height:0;
 }
 
 </style>
