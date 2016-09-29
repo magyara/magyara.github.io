@@ -20,19 +20,20 @@
 						<li class="dropdown">
 							<a href="projects.html" class="subjectLink" class="dropbtn">projects</a> 
 							<div class="dropdown-content">
+								<a href="projects.html#laptop">Toshiba Satellite C75D Screen Repair</a>
+								<a href="projects.html#july">Paper Circuit 4th of July Card</a>
 								<a href="projects.html#adventure">Adventure Game</a>
 								<a href="projects.html#phone">Phone Simulation</a>
 								<a href="projects.html#sumobot">SumoBot Robot</a>
-								<a href="projects.html#arduino">Arduino Enclosure</a>
-								<a href="projects.html#line">Line Following Robot</a>
+								<a href="projects.html#line">Line-Following Robot</a>
 								<a href="projects.html#web">Web Design Contest</a>
-								<a href="projects.html#robofest">Robofest</a>
 							</div>
 						</li>
 						<li class="dropdown">
 							<a href="internships.html" class="subjectLink" class="dropbtn">jobs & internships</a>
 							<div class="dropdown-content">
 								<a href="internships.html#web">Web Development Team</a>
+								<a href="internships.html#disher">Disher</a>
 								<a href="internships.html#mbfs">Mercedes-Benz Financial Services</a>
 							</div>		
 						</li>
@@ -42,7 +43,48 @@
 			</div>
 			<div id="main" align="center">
 				<p>&nbsp;</p>
-				<span style="background-color: #84d3ba; color: #FFFFFF; font-size: 35px; font-family: 'Times New Roman'; "> &nbsp Projects &nbsp  </span>
+				<span class="heading"> &nbsp Projects &nbsp  </span>
+				<p>&nbsp;</p>
+				
+				<h1 id="laptop">
+					Toshiba Satellite C75D Screen Repair
+				</h1>
+				<div class="description">
+					<p>
+						After my Toshiba Satellite C75D laptop screen broke, I repaired it myself. The first step was removing the screen from the computer, which involved first turning off the machine and removing the battery for safety. I then removed the screws attaching the border of the screen and used a prying tool to unhook the small plastic hinges attaching the border around the screen to the back casing as shown below.
+					</p>
+					<img src="images/projects/laptop_front.jpg" class="responsive">
+					<p>
+						After the casing was off I located the part number of the screen (LP173WD1). Luckily, I found a replacement on Amazon.com for only $55.00. I verified the size and ordered it. When the new screen arrived I got to work installing it. I detached the wire on the back of the broken screen connecting it to the motherboard and removed the screws form the metal holders on the sides. 
+					</p>
+					<img src="images/projects/laptop_back.jpg" class="responsive">
+					<p>
+						Next the new screen was ready to be put into place. I plugged it into the motherboard, re-attached all of the screws, and clicked the casing back into place. I put in the battery and turned on my computer and it worked, no more broken screen!
+					</p>
+				</div>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				
+				<h1 id="july">
+					Paper Circuit 4th of July Card
+				</h1>
+				<div class="description">
+					<p>
+						One of my favorite hobbies is making greeting cards, and when I learned about paper circuits, I knew I could make a card using the technique. Paper circuits are basically what they sound like: circuits made on paper. Instead of using fiberglass as a base like a typical PCB, paper is used. Copper tape is then used as "traces" and can be cut and folded as needed. Components can then be either taped or carefully soldered to the copper tape.
+					</p>
+					<img src="images/projects/july_solder.jpg" class="responsive">
+					<p>
+						For my first paper circuit project I made a 4th of July card for my parents. I first designed what I wanted my card to look like on scrap paper and then bought copper tape, SMD LEDs, and a 3V coin cell battery. After the design I could start constructing. I cut the copper tape in half for thinner strips and laid it out to mimic fireworks. One strip of the fireworks was connected to the positive side of the battery and the other was to the negative side and the SMD LED was placed accordingly and soldered for a strong hold. Since I didn't want the card to always be lit up, I made a button by placing foam padding around the battery and paper above it. Once someone presses down on the paper, the padding squishes and the positive line connecting all of the LEDS is connected, completing the circuit and making the lights illuminate.
+					</p>
+					<div class="responsiveContainer">
+					<img src="images/projects/july_off.jpg" class="responsiveContained">
+					<img src="images/projects/july_on.jpg" class="responsiveContained">
+					</div>
+					<p>
+						This project was definitely something unique that I would want to try again. I think paper circuits would be great for teaching children about electronics in an inexpensive and easy way.  
+					</p>
+				</div>
+				<p>&nbsp;</p>
 				<p>&nbsp;</p>
 
 				<h1 id="adventure">
@@ -50,29 +92,27 @@
 					<img src="images/projects/bjlogo.jpg" alt="BlueJ" title="BlueJ"> 
 					<img src="images/projects/javalogo.jpg" alt="Java" title="Java">
 				</h1>
-				<p><img src="images/hr.jpg"></p>
-				In my Computer Science I class, I challenged myself to make each one of my programming projects Qdoba-themed, and the final project was a culmination of that. I created a choose your own adventure game that stars a heroic Qdoba inspector (you) whose task is to visit Qdobas throughout the United States and figure out which one is making fake, sub-par burritos. Buttons along the right side of the GUI allow you to go north, south, east, and west, and buttons along the bottom allow the player to interact with each room as follows:<br/>
-				<center>
-					<table style="font-size:small;">
-						<tr>
-							<td width="800">
-								<b>Help</b> - Gives the player hints to progress through the game<br/>
-								<b>Pickup</b> - If there's an item in the room that's light enough to carry, puts it into the player's bag <br/>
-								<b>Drop</b> - Removes a specified item from the player's bag and places it in their current room<br/>
-								<b>Visit HQ</b> - Transports player to the Qdoba headquarters to report the fake Qdoba<br/>
-								<b>Eat</b> - The player can consume an item from their bag if it's edible<br/>
-								<b>Look</b> - Displays a description of the current room<br/>
-								<b>List</b> - Displays the items in the player's bag<br/>
-							</td>
-						</tr>
-					</table>
-				</center>
-				<p>&nbsp;</p>
-				<center><img src="images/projects/adventure_intro.jpg" width="600"></center>
-				<p>&nbsp;</p>
-				This game was written in Java using the software BlueJ. I used both local and global variables, an array list to create the bag of items, and a hashmap to allow the player to move in between rooms. I also created a test class to simulate a player moving through each room and winning the game to ensure that my program worked correctly.
-				<p>&nbsp;</p>
-				<center><img src="images/projects/adventure_examine.jpg"></center>
+				<div class="description">
+					<p>
+					In my Computer Science I class, I challenged myself to make each one of my programming projects Qdoba-themed, and the final project was a culmination of that. I created a choose your own adventure game that stars a heroic Qdoba inspector (you) whose task is to visit Qdobas throughout the United States and figure out which one is making fake, sub-par burritos. Buttons along the right side of the GUI allow you to go north, south, east, and west, and buttons along the bottom allow the player to interact with each room as follows:
+					</p>
+					<p>
+						<div style="margin-left: 5%;">
+							<b>Help</b> - Gives the player hints to progress through the game<br/>
+							<b>Pickup</b> - If there's an item in the room that's light enough to carry, puts it into the player's bag <br/>
+							<b>Drop</b> - Removes a specified item from the player's bag and places it in their current room<br/>
+							<b>Visit HQ</b> - Transports player to the Qdoba headquarters to report the fake Qdoba<br/>
+							<b>Eat</b> - The player can consume an item from their bag if it's edible<br/>
+							<b>Look</b> - Displays a description of the current room<br/>
+							<b>List</b> - Displays the items in the player's bag<br/>
+						</div>
+					</p>
+					<img src="images/projects/adventure_intro.jpg" class="responsive">
+					<p>
+					This game was written in Java using the software BlueJ. I used both local and global variables, an array list to create the bag of items, and a hashmap to allow the player to move in between rooms. I also created a test class to simulate a player moving through each room and winning the game to ensure that my program worked correctly.
+					</p>
+					<img src="images/projects/adventure_examine.jpg" class="responsive">
+				</div>
 				<p>&nbsp;</p>
 				<p>&nbsp;</p>
 
@@ -81,18 +121,24 @@
 					<img src="images/projects/bjlogo.jpg" alt="BlueJ" title="BlueJ"> 
 					<img src="images/projects/javalogo.jpg" alt="Java" title="Java">
 				</h1>
-				<p><img src="images/hr.jpg"></p>
-				In this project for my Computer Science I class, I used BlueJ to create a Java class to simulate basic functionality of a smart phone. The owner "pretends" to do basic tasks such as send texts, stream video, and stream audio. The program can then print a monthly statement summarizing the cost of the services used. 
-				<p>&nbsp;</p>
-				<center><img src="images/projects/phoneproject.jpg"></center>
-				<p>&nbsp;</p>
-				First I created the class MyPhone with private instance variables for things to be used and changed throughout the class such as number of texts, battery life, and the phone number. I then used a constructer to set the name and phone number to what the user entered and initialized variables for number of texts and battery life to 0.
-				<p>&nbsp;</p>
-				After that I created mutator methods to modify the class fields and used private helper methods within them to print the monthly statement, read texts, stream video, etc. 
-				<p>&nbsp;</p>
-				I prevented user error by not allowing for negative minutes to be entered when the user sets the amount of time to charge the battery and stream audio and video. I also added a wifi capability which used a boolean flag called wiFiOn to identify if wifi is on or off. If it's on, no data will be used when streaming audio and video but the battery life will still decreace. 
-				<p>&nbsp;</p>
-				Finally I created a class called MyPhoneTest to error check my program. It instantiates two phones for different customer names and invokes methods with a variety of parameter values to test for accuracy. If the results are not as expected, an error message is displayed.
+				<div class="description">
+					<p>
+						In this project for my Computer Science I class, I used BlueJ to create a Java class to simulate basic functionality of a smart phone. The owner "pretends" to do basic tasks such as send texts, stream video, and stream audio. The program can then print a monthly statement summarizing the cost of the services used.
+					</p>
+					<img src="images/projects/phoneproject.jpg" class="responsive">
+					<p>
+						First I created the class MyPhone with private instance variables for things to be used and changed throughout the class such as number of texts, battery life, and the phone number. I then used a constructer to set the name and phone number to what the user entered and initialized variables for number of texts and battery life to 0.
+					</p>
+					<p>
+						After that I created mutator methods to modify the class fields and used private helper methods within them to print the monthly statement, read texts, stream video, etc. 
+					</p>
+					<p>
+						I prevented user error by not allowing for negative minutes to be entered when the user sets the amount of time to charge the battery and stream audio and video. I also added a wifi capability which used a boolean flag called wiFiOn to identify if wifi is on or off. If it's on, no data will be used when streaming audio and video but the battery life will still decreace. 
+					</p>
+					<p>
+						Finally I created a class called MyPhoneTest to error check my program. It instantiates two phones for different customer names and invokes methods with a variety of parameter values to test for accuracy. If the results are not as expected, an error message is displayed.
+					</p>
+				</div>
 				<p>&nbsp;</p>
 				<p>&nbsp;</p>
 
@@ -101,15 +147,14 @@
 					<img src="images/projects/swlogo.jpg" alt="Solidworks" title="Solidworks"> 
 					<img src="images/projects/arduinologo.jpg" alt="Arduino IDE" title="Arduino IDE">
 				</h1>
-				<p><img src="images/hr.jpg"></p>
-				I built a "SumoBot" with a group of three other students in  my Introduction to Engineering Design II class. This robot followed a line into a circle arena then tried to push the opponent robot out of the arena to win. 
-				<p>&nbsp;</p>
-				<center><img src="images/projects/sumocomplete.jpg"></center>
-				<p>&nbsp;</p>
-				Rules were as follows:
-				<br/>
-				<center>
-					<table style="font-size: small;"><tr><td width="800">
+				<div class="description">
+					<p>
+						I built a "SumoBot" with a group of three other students in  my Introduction to Engineering Design II class. This robot followed a line into a circle arena then tried to push the opponent robot out of the arena to win. 
+					</p>
+					<img src="images/projects/sumocomplete.jpg" class="responsive">
+					Rules were as follows:
+					<p>
+						<div style="margin-left: 5%;">
 							<b>1.</b> Robots cannot exceed 2.0 kg.<br/>
 							<b>2.</b> The robots have a maximum size of 15cm x 20cm x 25cm.<br/>
 							<b>3.</b> Each device will use the Arduino board for sensor, motor control and any other computations required.<br/>
@@ -117,46 +162,21 @@
 							<b>5.</b> Each device will be started and stopped with a clearly labeled and easily accessible switch.<br/>
 							<b>6.</b> Use of refuse materials to construct the robot is prohibited.<br/>
 							<b>7.</b> Budget: Maximum of $69.57 for materials - not including the Arduino.<br/>
-						</td></tr>
-					</table>
-				</center>
-				<p>&nbsp;</p>
-				<center>
-					<img src="images/projects/sumoarena.jpg">
-					&nbsp; &nbsp;
-					<img src="images/projects/sumoprototype.jpg">
-				</center>
-				<p>&nbsp;</p>
-				The first step was to brainstorm possible designs for the robot. We made a morphological chart of possibilities and then constructed cardboard prototypes to see how the designs would look. We ended up deciding on a robot with a three sensor array to sense the line, ultrasonic sensor to sense the other robot, and a ramp in the front to push. 
-				<p>&nbsp;</p>
-				<center><img src="images/projects/sumosw.jpg"></center>
-				<p>&nbsp;</p>
-				After that we made a SolidWorks model of the robot and milled out the parts (top, base, sides, front, back, and wheels) on Haas CNC machines. Once the parts were milled we drilled holes and screwed everything together.
-				<p>&nbsp;</p>
-				<center><img src="images/projects/sumoopen.jpg"></center>
-				<p>&nbsp;</p>
-				Once it was assembled I could start working on the programming. I coded the robot to run in a straight line, spin to calibrate the line sensor, then follow the line. Once the line sensor saw all white (the edge of the circle), the robot went into “sumo mode.” It went forward to the center of the circle then spun around until the ultrasonic sensor detected another object within range. When an object was detected our robot moved forward and pushed it until it was forced out of the arena.
-				<p>&nbsp;</p>
-				<p>&nbsp;</p>
-
-				<h1 id="arduino">Arduino Enclosure Design <img src="images/projects/swlogo.jpg" alt="Solidworks" title="Solidworks"></h1>
-				<p><img src="images/hr.jpg"></p>
-				I constructed a case for an Arduino board during my first year of college. The case was made to prevent the Arduino from being crushed, allow access to vital ports (USB connector, power jack, reset button, pins), and meet professional expectations.
-				<p>&nbsp;</p>
-				<center><img src="images/projects/caseopen.jpg"></center>
-				<p>&nbsp;</p>
-				<p>&nbsp;</p>
-				<center><img src="images/projects/gantt.jpg"></center>
-				<p>&nbsp;</p>
-				The first step in the process was to create a Gantt chart of the procedures that needed to be done in order to meet the deadline. There was no budget restriction for this project, but plastic cost $5 per 12x12 piece.
-				<p>&nbsp;</p>
-				<center><img src="images/projects/casesw.jpg"></center>
-				<p>&nbsp;</p>
-				The SolidWorks model of the case was then designed. The case had a design in which all the pieces joined together like a puzzle. Another neat part about the design is the top can come off to allow for the Arduino to be removed or replaced.
-				<p>&nbsp;</p>
-				<center><img src="images/projects/casecomplete.jpg"></center>
-				<p>&nbsp;</p>
-				After the model was designed and the g-codes were made, I milled out the six pieces on a Haas CNC machine. I then used a drill press to put holes in the base to allow for the Arduino board to be screwed in so it doesn’t toggle around when being carried. 
+						</div>
+					</p>
+					<img src="images/projects/sumoprototype.jpg" class="responsive">
+					<p>
+						The first step was to brainstorm possible designs for the robot. We made a morphological chart of possibilities and then constructed cardboard prototypes to see how the designs would look. We ended up deciding on a robot with a three sensor array to sense the line, ultrasonic sensor to sense the other robot, and a ramp in the front to push. 
+					</p>
+					<img src="images/projects/sumosw.jpg" class="responsive">
+					<p>
+						After that we made a SolidWorks model of the robot and milled out the parts (top, base, sides, front, back, and wheels) on Haas CNC machines. Once the parts were milled we drilled holes and screwed everything together.
+					</p>
+					<img src="images/projects/sumoopen.jpg" class="responsive">
+					<p>
+						Once it was assembled I could start working on the programming. I coded the robot to run in a straight line, spin to calibrate the line sensor, then follow the line. Once the line sensor saw all white (the edge of the circle), the robot went into "sumo mode." It went forward to the center of the circle then spun around until the ultrasonic sensor detected another object within range. When an object was detected our robot moved forward and pushed it until it was forced out of the arena.
+					</p>
+				</div>
 				<p>&nbsp;</p>
 				<p>&nbsp;</p>
 
@@ -164,43 +184,45 @@
 					Line-Following Robot 
 					<img src="images/projects/arduinologo.jpg" alt="Arduino IDE" title="Arduino IDE">
 				</h1>
-				<p><img src="images/hr.jpg"></p>
-				For my first college engineering class (EGR 106) final, I worked with a partner to create a line following robot with the following guidelines:
-				<center>
-					<table style="font-size: small;">
-						<tr>
-							<td width="800">
-								<b>1.</b> Each device must fit in a box with internal dimensions measuring 100mm by 100mm by 200mm. <br/>
-								<b>2.</b> Each device must incorporate one part designed by the team and machined using the CNC machines in the milling lab. <br/>
-								<b>3.</b> No use of the 3D printer. <br/>
-								<b>4.</b> Each device will use the Arduino board for sensor, motor control, and any other computations required. <br/>
-								<b>5.</b> Each device is autonomous.  <br/>
-								<b>6.</b> Prohibited materials include: cardboard, paper, wood, tape (as a method of jointing), and refuse materials (beverage containers, paper towel tubes, etc.). <br/>
-								<b>7.</b> Budget: Maximum of $40 for materials ~ not including the Arduino. <br/>
-							</td>
-						</tr>
-					</table>
-				</center>
-				Robots were scored based on how far and fast they navigated a path consisting of a straight line, gentle curve, more extreme curve, and a right angle.
-				<p>&nbsp;</p>
-				<center><img src="images/projects/prototypes.jpg"></center>
-				<p>&nbsp;</p>
-				To start, my partner and I came up with a list of specifications our robot had to meet. We then did some benchmarking and brainstorming and finally came up with a morphological chart of three different concepts to try. Above are two of the prototypes I constructed out of cardboard, tape, and loose leaf based on these concepts.
-				<p>&nbsp;</p>
-				As we started gathering the parts to build our final robot, my partner and I realized that we would have to divert from our original prototype design. In order to keep the robot stable, we added a small piece of plastic at the front. We also decided to use only one deck to stay on budget and had to add weight to the end to prevent skidding.
-				<p>&nbsp;</p>
-				<center>
-					<iframe width="560" height="315" src="http://www.youtube.com/embed/-Zp4u65rAxA" frameborder="0" allowfullscreen>
-					</iframe>
-				</center>
-				<p>&nbsp;</p>
-				Finally, here's a video of the completed project. We ended up naming the robot "Burnout" since it burnt out a 10k resistor and my partner's hand. It successfully completed the entire track with a record time of 23.5 seconds, earning us an A!
-				<p>&nbsp;</p>
-				I wrote the program for the robot using the Arduino IDE software. I was also in charge of figuring out the schematic for the wiring and adjusting the program based on how it caused the robot to perform.
-				<p>&nbsp;</p>
-				<center><img src="images/projects/linerobot.jpg"></center>
-				<p>&nbsp;</p>
-				Materials used: Arduino UNO, SainSmart Arduino Motor Shield, tamiya DC dual motor, tamiya wheels X2, battery pack, AA batteries X6, plastic pieces from milling lab, small breadboard X2, IR LED X2, phototransistor X2, 1k resistor X2, 10k resistor X2, assorted wires, electrical tape, screws, and weights (washers and a bolt).
+				<div class="description">
+					<p>
+					For my first college engineering class (EGR 106) final, I worked with a partner to create a line following robot with the following guidelines:
+					<p>
+						<div style="margin-left: 5%;">
+							<b>1.</b> Each device must fit in a box with internal dimensions measuring 100mm by 100mm by 200mm. <br/>
+							<b>2.</b> Each device must incorporate one part designed by the team and machined using the CNC machines in the milling lab. <br/>
+							<b>3.</b> No use of the 3D printer. <br/>
+							<b>4.</b> Each device will use the Arduino board for sensor, motor control, and any other computations required. <br/>
+							<b>5.</b> Each device is autonomous.  <br/>
+							<b>6.</b> Prohibited materials include: cardboard, paper, wood, tape (as a method of jointing), and refuse materials (beverage containers, paper towel tubes, etc.). <br/>
+							<b>7.</b> Budget: Maximum of $40 for materials ~ not including the Arduino. <br/>
+						</div>
+					</p>
+					<p>
+						Robots were scored based on how far and fast they navigated a path consisting of a straight line, gentle curve, more extreme curve, and a right angle.
+					</p>
+					<img src="images/projects/prototypes.jpg" class="responsive">
+					<p>
+						To start, my partner and I came up with a list of specifications our robot had to meet. We then did some benchmarking and brainstorming and finally came up with a morphological chart of three different concepts to try. Above are two of the prototypes I constructed out of cardboard, tape, and loose leaf based on these concepts.
+					</p>
+					<p>
+						As we started gathering the parts to build our final robot, my partner and I realized that we would have to divert from our original prototype design. In order to keep the robot stable, we added a small piece of plastic at the front. We also decided to use only one deck to stay on budget and had to add weight to the end to prevent skidding.
+					</p>
+					<p style="text-align:center;">
+						<iframe width="560" height="315" src="http://www.youtube.com/embed/-Zp4u65rAxA" frameborder="0" allowfullscreen >
+						</iframe>
+					</p>
+					<p>
+						Finally, here's a video of the completed project. We ended up naming the robot "Burnout" since it burnt out a 10k resistor and my partner's hand. It successfully completed the entire track with a record time of 23.5 seconds, earning us an A!
+					</p>
+					<p>
+						I wrote the program for the robot using the Arduino IDE software. I was also in charge of figuring out the schematic for the wiring and adjusting the program based on how it caused the robot to perform.
+					</p>
+					<img src="images/projects/linerobot.jpg" class="responsive">
+					<p>
+						Materials used: Arduino UNO, SainSmart Arduino Motor Shield, tamiya DC dual motor, tamiya wheels X2, battery pack, AA batteries X6, plastic pieces from milling lab, small breadboard X2, IR LED X2, phototransistor X2, 1k resistor X2, 10k resistor X2, assorted wires, electrical tape, screws, and weights (washers and a bolt).
+					</p>
+				</div>
 				<p>&nbsp;</p>
 				<p>&nbsp;</p>
 
@@ -209,44 +231,22 @@
 					<img src="images/projects/notepadlogo.jpg"  alt="Notepad++" title="Notepad++"> 
 					<img src="images/projects/pslogo.jpg"  alt="Adobe Photoshop" title="Adobe Photoshop"> <img src="images/projects/filezillalogo.jpg"  alt="FileZilla" title="FileZilla">
 				</h1>
-				<p><img src="images/hr.jpg"></p>
+				<div class="description">
+					<p>
+						My senior year of high school I designed a five page website using <a href="http://notepad-plus-plus.org/" target="_blank">Notepad++</a> for the <a href="https://www.mcwt.org/" target="_blank">MCWT's</a> (Michigan Council of Women in Technology) web design competition to the theme of &ldquo;Ancestors: OMG.&rdquo; The criteria was to construct and launch a website about three older relatives. I also presented my website to a panel of judges as part of being selected as a finalist. 
+					</p>
+					<img src="images/projects/mcwtsite.jpg" class="responsive">
+					<p>
+						This was my first time entering the competition and I entered in the advanced category and placed fourth. My prize included $75 and a trip to Mercedes-Benz Financial Services, which later helped me get a co-op working in the IT department there.
+					</p>
+					<p>
+						I used Photoshop to make graphics and add effects to pictures and <a href="https://filezilla-project.org/" target="_blank">FileZilla</a> to upload my site to the MCWT server.
+					</p>
+					<img src="images/projects/presentation.jpg" class="responsive">
+				</div>
 				<p>&nbsp;</p>
 				<p>&nbsp;</p>
 
-				<center>
-					<table style="font-size: small;">
-						<tr>
-							<td>
-								<img src="images/projects/mcwtsite.jpg" height="350"> </td><td width="10">
-							</td>
-							<td width="300">
-								My senior year of high school I designed a five page website using <a href="http://notepad-plus-plus.org/" target="_blank">Notepad++</a> for the <a href="https://www.mcwt.org/" target="_blank">MCWT's</a> (Michigan Council of Women in Technology) web design competition to the theme of &ldquo;Ancestors: OMG.&rdquo; The criteria was to construct and launch a website about three older relatives. I also presented my website to a panel of judges as part of being selected as a finalist. 
-							</td>
-						</tr>
-					</table>
-				</center>
-				<p>&nbsp;</p>
-				This was my first time entering the competition and I entered in the advanced category and placed fourth. My prize included $75 and a trip to Mercedes-Benz Financial Services, which later helped me get a co-op working in the IT department there.
-				<p>&nbsp;</p>
-				I used Photoshop to make graphics and add effects to pictures and <a href="https://filezilla-project.org/" target="_blank">FileZilla</a> to upload my site to the MCWT server.
-				<p>&nbsp;</p>
-				<center><img src="images/projects/presentation.jpg"></center>
-				<p>&nbsp;</p>
-				<p>&nbsp;</p>
-
-				<h1 id="robofest">
-					Robofest 
-					<img src="images/projects/legologo.jpg" alt="LEGO Software" title="LEGO Software">
-				</h1>
-				<p><img src="images/hr.jpg"></p>
-				I helped my GET-IT  (Girls Exploring Together Information Technology) club in high school to make a LEGO Mindstorms NXT robot for Robofest. We programmed the robot to draw as part of the exhibition category and made it to the state competition at Lawrence Technological University.
-				<p>&nbsp;</p>
-				We named him Mr. Scribbles and we used the LEGO Mindstorms NXT software to program him to move in forward and in circles as well as pick up and place down the marker.
-				<p>&nbsp;</p>
-				<p>&nbsp;</p>
-				<center><img src="images/projects/robofest.jpg" width="800"></center>
-				<p>&nbsp;</p>
-				<p>&nbsp;</p>
 			</div>
 			<div id="footerStretch">
 				<div id="footer" align="center">
