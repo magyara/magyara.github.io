@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Ariel Magyar | Projects</title>
+		<link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/bellota" rel="stylesheet" type="text/css"/>
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/now" type="text/css"/>
+		<link rel="stylesheet" type="text/css" href="theme.css">
+	</head>
+	<style type="text/css">
+		* { margin: 0; padding: 0; }
+	</style>
+
+	<body>
+		<center>
+			<div id="naviStretch">
+				<div id="navi" align="center">
+					<ul>
+						<li><a href="index.html" class="homeLink">Ariel Magyar</a></li>
+						<li><a href="projects.html" class="subjectLink" class="dropbtn">projects</a></li>
+						<li><a href="work.html" class="subjectLink" class="dropbtn">work experience</a></li>
+						<li><a href="about.html" class="subjectLink">about me</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div id="main" align="center">
+				<p>&nbsp;</p>
+				<div class="heading">SumoBot Robot Competition</div>
+				<p>&nbsp;</p>
+				<p>
+					I built a "SumoBot" with a group of three other students in my Introduction to Engineering Design II class. This robot followed a line into a circle arena then tried to push the opponent robot out of the arena to win. 
+			
+					<img src="images/projects/sumocomplete.jpg" class="responsive">
+					Rules were as follows:
+						<div style="margin-left: 5%;">
+							<b>1.</b> Robots cannot exceed 2.0 kg.<br/>
+							<b>2.</b> The robots have a maximum size of 15cm x 20cm x 25cm.<br/>
+							<b>3.</b> Each device will use the Arduino board for sensor, motor control and any other computations required.<br/>
+							<b>4.</b> Each device is autonomous.<br/>
+							<b>5.</b> Each device will be started and stopped with a clearly labeled and easily accessible switch.<br/>
+							<b>6.</b> Use of refuse materials to construct the robot is prohibited.<br/>
+							<b>7.</b> Budget: Maximum of $69.57 for materials - not including the Arduino.<br/>
+						</div>
+					<img src="images/projects/sumoprototype.jpg" class="responsive">
+
+						The first step was to brainstorm possible designs for the robot. We made a morphological chart of possibilities and then constructed cardboard prototypes to see how the designs would look. We ended up deciding on a robot with a three sensor array to sense the line, ultrasonic sensor to sense the other robot, and a ramp in the front to push. 
+					<br/>
+					<img src="images/projects/sumosw.jpg" class="responsive">
+					
+						After that we made a SolidWorks model of the robot and milled out the parts (top, base, sides, front, back, and wheels) on Haas CNC machines. Once the parts were milled we drilled holes and screwed everything together.
+					<br/>
+					<img src="images/projects/sumoopen.jpg" class="responsive">
+						Once it was assembled I could start working on the programming. I coded the robot to run in a straight line, spin to calibrate the line sensor, then follow the line. Once the line sensor saw all white (the edge of the circle), the robot went into "sumo mode." It went forward to the center of the circle then spun around until the ultrasonic sensor detected another object within range. When an object was detected our robot moved forward and pushed it until it was forced out of the arena.
+					<br/>
+				</p>
+			</div>
+		</center>
+	</body>
+</html>
